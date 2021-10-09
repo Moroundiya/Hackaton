@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <div class="container-fluid" id="container">
         <div class="container-fluid" id="div-all">
             <div>
@@ -26,13 +27,13 @@
 
             <hr>
 
-            <form id="login">
+            <form id="login" action="php/account.php" method="post">
 
                 <div class="username">
                     <div>
                         <img src="images/username.png">
                     </div>
-                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email" name="email">
 
                 </div>
 
@@ -41,25 +42,25 @@
                         <img src="images/password.png">
                     </div>
 
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password">
 
                 </div>
 
                 <div>
-                    <button type="submit">Login</button>
+                    <button type="submit" name="login">Login</button>
                 </div>
 
             </form>
 
 
-            <form id="signup">
+            <form id="signup" action="php/account.php" method="post">
 
                 <div class="username">
                     <div>
                         <img src="images/username.png">
                     </div>
 
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Fullname" name="fullname">
 
                 </div>
 
@@ -67,31 +68,47 @@
                     <div>
                         <img src="images/email.png">
                     </div>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="username">
+                    <div>
+                        <img src="images/location.png">
+                    </div>
+                    <input type="text" placeholder="Location" name="location">
                 </div>
 
                 <div class="username">
                     <div>
                         <img src="images/password.png">
                     </div>
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password" id="password">
                 </div>
 
                 <div class="username">
                     <div>
                         <img src="images/password.png">
                     </div>
-                    <input type="password" placeholder="Confirm Password">
+                    <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword" oninput="check()">
+                    <span class="text-danger error font-weight-bold" style="display: hidden;"></span>
                 </div>
 
                 <div>
-                    <button type="submit">Signup</button>
+                    <button type="submit" name="register">Signup</button>
                 </div>
 
             </form>
         </div>
     </div>
-    <script src="disease.js"></script>
+    <script src="js/disease.js"></script>
+    <script>
+        const check =() =>{
+            
+            const password =document.querySelector("#password").value;
+            const Errors= document.getElementsByClassName(".error");
+            console.log(password)
+            
+        }
+    </script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
