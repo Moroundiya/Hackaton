@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/banner.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .container-fluid {
+    width: 30%;
+    height: 50%;
+    background-color: rgba(65, 105, 225, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 0 60px;
+}
+
+#container .container-fluid div:first-child {
+    width: 80%;
+    height: 40px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .container-fluid div:first-child div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid royalblue;
+}
+
+
+#container .container-fluid div:first-child div:nth-child(2) {
+    border: 2px solid royalblue;
+}
+
+#container .container-fluid hr {
+    width: 100%;
+    color: gray;
+    height: 3px;
+}
+
+#container .container-fluid #login {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#container .container-fluid #signup {
+    width: 100%;
+    transition: all 0.5s;
+    display: none;
+}
+
+.change-color{
+    background-color: midnightblue;
+}
+
+
+#container .container-fluid #login .username, #container .container-fluid #signup .username {
+    width: 80%;
+    height: 40px;
+    background-color: whitesmoke;
+    margin: 20px auto 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#container .container-fluid .username div:first-child {
+    width: 15%;
+    height: 100%;
+    background-color: midnightblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    outline: 0;
+    border: 0;
+}
+
+#container .container-fluid .username div:first-child img {
+    width: 20px;
+}
+
+#container .container-fluid #login .username input, #container .container-fluid #signup .username input {
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+#container .container-fluid #login button, #container .container-fluid #signup button {
+    background-color: red;
+    padding: 5px 45px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 30px black;
+}
+
+#container .container-fluid #login button:hover, #container .container-fluid #signup button:hover {
+    background-color: yellowgreen;
+}
+
+#container .container-fluid #login div:last-child, #container .container-fluid #signup div:last-child {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:500px) {
+    #container .container-fluid {
+        width: 85%;
+        height: auto;
+        padding: 60px 0 ;
+    }   
+}
+
