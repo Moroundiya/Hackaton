@@ -32,7 +32,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 30px 0 60px;
+    padding: 30px 0 80px;
 }
 
 #container .container-fluid div:first-child {
