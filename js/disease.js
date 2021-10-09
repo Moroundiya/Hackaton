@@ -8,7 +8,7 @@ loginPage.addEventListener("click", ()=> {
     signupPage.style.backgroundColor="transparent";
     login.style.display="block";
     signup.style.display="none";
-    divAll.style.height="60%";  
+    divAll.style.height="65%";  
 
 })
 
