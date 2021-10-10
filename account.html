@@ -12,7 +12,42 @@
 </head>
 
 <body>
-    
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="home">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img class="" src="images/favicon (2).png" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarnav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="showBg(0)">Home |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us" onclick="showBg(1)"> About Us |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#report" onclick="showBg(2)"> Report a Case |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" onclick="showBg(3)">Blog | </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us" onclick="showBg(4)"> Contact Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">
+                            <button class="btn btn-warning">Account</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container-fluid" id="container">
         <div class="container-fluid" id="div-all">
             <div>
@@ -88,7 +123,8 @@
                     <div>
                         <img src="images/password.png">
                     </div>
-                    <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword" oninput="check()">
+                    <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword"
+                        oninput="check()">
                     <span class="text-danger error font-weight-bold" style="display: hidden;"></span>
                 </div>
 
@@ -101,12 +137,12 @@
     </div>
     <script src="js/disease.js"></script>
     <script>
-        const check =() =>{
-            
-            const password =document.querySelector("#password").value;
-            const Errors= document.getElementsByClassName(".error");
+        const check = () => {
+
+            const password = document.querySelector("#password").value;
+            const Errors = document.getElementsByClassName(".error");
             console.log(password)
-            
+
         }
     </script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

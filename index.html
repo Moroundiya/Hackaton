@@ -9,10 +9,11 @@
     <link type="icon" rel="icon" href="images/logo.png">
     <link type="text/css" rel="stylesheet" href="disease.css">
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="home">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img class="" src="images/favicon (2).png" width="100">
@@ -23,19 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarnav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home |</a>
+                        <a class="nav-link" href="#" onclick="showBg(0)">Home |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us"> About Us |</a>
+                        <a class="nav-link" href="#about-us" onclick="showBg(1)"> About Us |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#report"> Report a Case |</a>
+                        <a class="nav-link" href="#report" onclick="showBg(2)"> Report a Case |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-us"> Contact Us |</a>
+                        <a class="nav-link" href="blog.html" onclick="showBg(3)">Blog | </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.php">Blog </a>
+                        <a class="nav-link" href="index.html#contact-us" onclick="showBg(4)"> Contact Us </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="account.html">
@@ -62,6 +63,8 @@
             </button>
         </div>
     </div>
+
+
     <div class="container-fluid row" id="about-us">
         <div class="col-lg-4 col-md-4 col-sm-12">
             <img class="" src="images/doctor.jpg">
@@ -116,7 +119,7 @@
         <p>CONTACT US </p>
         <p>
             <img src="images/location.png">
-            <span>Mosshod Abiola Polytechnic.. Abeokuta, Ogun State . Nigeria </span>
+            <span>Moshood Abiola Polytechnic, Abeokuta, Ogun State, Nigeria. </span>
         </p>
 
         <p>
@@ -137,6 +140,7 @@
 
 
     <script src=" bootstrap/js/bootstrap.min.js"> </script>
+    <script src="js/disease.js"></script>
 </body>
 
 </html>

@@ -11,10 +11,34 @@ nav {
 
 nav a {
     color: white !important;
+    /* background-color: white; */
+
+}
+
+.bgcolor {
+    background-color: green !important;
 }
 
 .nav-link {
     font-size: 18px;
+    /* background-color: white; */
+    /* color: royalblue !important; */
+}
+
+.nav-link:hover {
+    font-size: 18px;
+    /* background-color: midnightblue  ; */
+    /* color:  !important; */
+}
+
+.nav-link:active {
+    font-size: 18px;
+    /* background-color: white; */
+    /* color: royalblue !important; */
+}
+
+.nav-item:last-child a  {
+    background-color: transparent !important;
 }
 
 #banner {
@@ -212,6 +236,14 @@ nav a {
     padding-bottom: 50px;
 }
 
+#contact-us p {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact-us p:first-child {
     font-size: 24px;
     text-align: center;
@@ -222,7 +254,7 @@ nav a {
 #contact-us p {
     color: white;
     font-size: 18px;
-    line-height: 1.0 !important;
+    line-height: 1.3 !important;
 }
 
 
@@ -232,12 +264,12 @@ nav a {
 
 
 #contact-us p img {
-    float: left;
+    /* float: left; */
     width: 20px;
 }
 
 #contact-us p span {
-    float: right;
+    /* float: right; */
     margin-left: 15px;
 }
 
