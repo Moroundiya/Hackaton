@@ -2,13 +2,25 @@ var login = document.querySelector("#login");
 var signup = document.querySelector("#signup");
 var divAll = document.querySelector("#div-all");
 var loginPage = document.getElementsByClassName("login-page")[0];
+var activeMenu = document.querySelectorAll(".nav-item");
+
+
+function showBg(x) {
+    for (var i=0; i<activeMenu.length; i++) {
+            activeMenu[x].style.backgroundColor="midnightblue"
+            activeMenu[i].style.backgroundColor="transparent";
+        }
+    }
+
+
 
 loginPage.addEventListener("click", ()=> {
     loginPage.style.backgroundColor="midnightblue"
     signupPage.style.backgroundColor="transparent";
     login.style.display="block";
     signup.style.display="none";
-    divAll.style.height="60%";  
+    divAll.style.height="60%"; 
+    // alert(activeMenu.length)
 
 })
 
@@ -19,5 +31,5 @@ signupPage.addEventListener("click", ()=> {
     loginPage.style.backgroundColor="transparent"
     login.style.display="none";
     signup.style.display="block";
-    divAll.style.height="80%";
+    divAll.style.height="85%";
 })
